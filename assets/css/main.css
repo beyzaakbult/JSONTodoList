@@ -1,0 +1,94 @@
+.view {
+    width: 100%;
+}
+.view .view-left {
+    padding-left: 3rem;
+    vertical-align: top;
+    width: 30%;
+    min-width: 20rem;
+}
+.view .view-right {
+    padding-left:5rem;
+    padding-right:5rem;
+    vertical-align: top;
+    width: 70%;
+    min-width: 40rem;
+}
+.card {
+    border:1px solid lightgray;
+    background-color: lightgoldenrodyellow;
+    padding: 1rem;
+}
+.card-column {
+    vertical-align: top;
+    width: 25rem;
+    min-width: 25rem;
+}
+.card-header >td {
+    font-weight: bolder;
+    font-size: large;
+    padding-bottom: 1rem;
+}
+.card-content tr:not(.card-footer) + tr.card-footer >td {
+    padding-top: 1rem;
+}
+.hidden {
+    display: none !important;
+}
+.text-button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color:blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.new-todo-section {
+    border:1px solid lightgray;
+    background-color: lightgoldenrodyellow;
+}
+.new-todo-form, .new-todo-header {
+    padding:1rem;
+    width: 20rem;
+}
+.todo-card-edit, .edit-todo-header {
+    width: 20rem;
+}
+.check-input, .text-input, .select-input {
+    margin: 0;
+    height: 1.5rem;
+}
+.check-input {
+    width: 1.5rem;
+}
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+.form-submit-button button, .delete-button, .edit-button, .cancel-edit-button {
+    width: 4.5rem;
+    margin-left:0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top:0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: black;
+    color:lightgoldenrodyellow
+}
+.delete-button:hover, .edit-button:hover, .form-submit-button button:hover {
+    background-color: darkgreen;
+}
+.card:not(.editing) .card-edit-form, .card:not(.editing) .card-actions .cancel-edit-button {
+    display: none;
+}
+.card:not(.editing) .card-info, .card:not(.editing) .card-actions .edit-button {
+    display: block;
+}
+.card.editing .card-edit-form, .card.editing .card-actions .cancel-edit-button {
+    display: block;
+}
+.card.editing .card-info, .card.editing .card-actions .edit-button {
+    display: none;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js" defer></script>
+    <title>User todos</title>
+</head>
+<body>
+    <section>
+        <div>
+            <table class="view">
+                <tbody>
+                    <tr>
+                        <td class="view-left">
+                            <div class="new-todo-section">
+                            <div class="new-todo-header"><h3>Add new assignment</h3></div>
+                            <form id="new-todo" class="new-todo-form">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Title</td>
+                                            <td>:</td>
+                                            <td>
+                                                <input class="text-input" id="todo-title-field" name="title" type="text" required></input>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Actor</td>
+                                            <td>:</td>
+                                            <td>
+                                                <select class="select-input" id="todo-actor-field" name="actor" id="cars" form="new-todo" required>
+                                                    <option value="" disabled selected hidden>Select a user</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Assignee</td>
+                                            <td>:</td>
+                                            <td>
+                                                <select class="select-input" id="todo-assignee-field" name="assignee" id="cars" form="new-todo" required>
+                                                    <option value="" disabled selected hidden>Select a user</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Completed</td>
+                                            <td>:</td>
+                                            <td>
+                                                <input class="check-input" id="todo-completed-field" name="completed" type="checkbox"></input>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br/>
+                                <div class="form-submit-button"><button type="submit">Submit</button></div>
+                            </form>
+                            </div>
+                        </td>
+                        <td class="view-right"><div id="list-todo"></div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</html>
